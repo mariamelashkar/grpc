@@ -1,0 +1,13 @@
+syntax="proto3";
+package greet;
+
+option go_package ="https://github.com/mariamelashkar/grpc/greet/proto"; //where code gonna be generated repo/directory/folder
+
+message Dummy {
+    uint32 id=1;
+
+}
+
+service DummyService {
+    
+}
