@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package main;
+
+option go_package ="./proto";
+
+message CalcRequest {
+int32 first_num = 1;
+int32 second_num=2;
+
+
+}
+
+message CalcResponse {
+int32 result =1;
+
+}
+
+service calcService {
+    rpc calc(CalcRequest) returns (CalcResponse);
+}
